@@ -28,6 +28,8 @@ openstack subnet set --dns-nameserver 8.8.8.8 --dns-nameserver 8.8.4.4 ctlplane-
 
 openstack overcloud container image prepare \
   -e /usr/share/openstack-tripleo-heat-templates/environments/ceph-ansible/ceph-ansible.yaml \
+  -e /usr/share/openstack-tripleo-heat-templates/environments/ceph-ansible/ceph-rgw.yaml \
+  -e /usr/share/openstack-tripleo-heat-templates/environments/ceph-ansible/ceph-mds.yaml \
   -e /usr/share/openstack-tripleo-heat-templates/environments/services-docker/sahara.yaml \
   -e /usr/share/openstack-tripleo-heat-templates/environments/services-docker/manila.yaml \
   -e /usr/share/openstack-tripleo-heat-templates/environments/services-docker/octavia.yaml \
